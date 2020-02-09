@@ -7,26 +7,22 @@ How to use stock picker
     1. ws://localhost:9000/socket
 3. input 
     1. Stock name is the ticker symbol. This is case insensitive
-    2. 
-       {
+    2. {
         "command": {add or remove},
         "stockName": {Stock Symbol Name}
        }
     3. add
-        1. 
-           {
+        1. {
              "command": "add",
              "stockName": "manh"
            }
     3. remove
-        1. 
-           {
+        1. {
              "command": "remove",
              "stockName": "manh"
            }
 4. output
-    1. 
-       { 
+    1. { 
          {Stock name} : {
             "stockName": {Stock name}
             "stockPrice": {Big Boolean of stock price},
@@ -34,8 +30,7 @@ How to use stock picker
             "timeZone": {Time zone of the last traded time}
          }
        }
-    2. 
-         {
+    2. {
          "MANH": {
            "stockName": "MANH",
            "stockPrice": {

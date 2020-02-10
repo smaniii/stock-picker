@@ -20,17 +20,20 @@ $ ->
       $("#removesymboltext").val("")
 
   chart = (messages) ->
-    ctx = document.getElementById('myChart');
-    myLineChart = new Chart(ctx, {
-        type: 'line',
-        labels: [1500,1600,1700,1750,1800,1850,1900,1950,1999,2050],
-        data: [
-          datasets: [{
-                data: [86,114,106,106,107,111,133,221,783,2478],
-                label: "Africa",
-                borderColor: "#3e95cd",
-                fill: true
-          }]
-        ]
-    })
 
+    new Chart(document.getElementById("line-chart"), {
+      type: 'line',
+      data: {
+        labels: [],
+        datasets: [{
+            data: [{x: 1500, y: 86}, {x: 1600, y: 115}, {x: 1700, y: 225}, {x: 1830, y: 114}, {x: 1900, y: 90}, {x: 2001, y: 90}],
+            label: "test",
+            borderColor: "#3e95cd",
+            fill: false
+          }
+        ]
+      },
+      options: {
+        maintainAspectRatio: false
+      }
+    })

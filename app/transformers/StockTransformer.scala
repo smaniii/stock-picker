@@ -17,6 +17,7 @@ object StockTransformer {
 
       mapConvertedMap.put(key, stockDO)
     })
+    println("Converted Map : " + mapConvertedMap)
     mapConvertedMap.toMap
   }
 }

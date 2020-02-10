@@ -3,7 +3,7 @@ How to use stock picker
 
 1. run the sbt application
     1. sbt run
-2. connect to web socket 
+2. connect to web socket recommended chrome smart socket plugin
     1. ws://localhost:9000/socket
 3. input 
     1. Stock name is the ticker symbol. This is case insensitive
@@ -60,5 +60,13 @@ How to use stock picker
        }
 5. Configuration
     1. delay is the variable used to determine how often information is sent to the client in seconds
+6. UI
+    1. visit http://localhost:9000/ recommended chrome
+    2. Add stock
+        1. Add a stock name then click Ad Stock
+    3. Remove Stock
+        1. Add a stock name then click Remove Stock
+    4. Sample UI
+        1. ![ui](images/ui.png)
 
        

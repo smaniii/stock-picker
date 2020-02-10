@@ -29,7 +29,7 @@ $ ->
       $("#div").after('<table id="' + message.stockName + '">
         <tr>
           <th>Stock Name</th>
-          <th>Last Sold Price Stock Price</th>
+          <th>Last Sold Stock Price</th>
           <th>Time</th>
           <th>Time Zone</th>
        </tr>
